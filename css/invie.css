@@ -41,16 +41,21 @@ body {
 .guitarra {
 	margin: 10px;
 	padding: 10px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	border: 1px solid #1F213C;
+	border-radius: 8px;
 }
 
 .right {
 	float: right;
+	position: relative;
+	top: -97px;
 }
 
 .left {
 	float: left;
+	position: relative;
+	top: 100px;
 }
 
 .title-b {
@@ -70,9 +75,16 @@ body {
 	margin-bottom: 70px;
 }
 
+.header {
+	position: relative;
+}
+
 .menu {
 	font-size: 24px;
 	display: inline-block;
+	position: absolute;
+	right: 0px;
+
 }
 
 .menu li {
@@ -89,6 +101,31 @@ body {
 }
 
 .contenedor-guitarra-b {
-	margin-left: 370px;
+	margin-left: 380px;
 
+}
+
+button {
+	border-radius: 5px;
+	background: #fd324e;
+	color: white;
+	border: none;
+	padding: 7px;
+}
+
+.footer {
+	background: #273b47;
+}
+
+.contacto img {
+	display: block;
+}
+
+.contacto strong {
+	display: block;
+}
+
+.contacto a {
+	color: white;
+	text-decoration: none;
 }
