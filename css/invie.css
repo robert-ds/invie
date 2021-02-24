@@ -10,6 +10,12 @@ body {
 .contenedor {
 	width: 800px;
 	margin: auto;
+	position: relative;
+}
+
+.background {
+	background-image: url('../images/background.png');
+	background-size: cover;
 }
 
 .titulo {
@@ -20,6 +26,10 @@ body {
 	line-height: 50px;
 }
 
+.titulo span {
+	text-decoration: underline;
+}
+
 .title-a {
 	font-size: 24px;
 	line-height: 50px;
@@ -27,6 +37,7 @@ body {
 
 .guitarras {
 	color: #1F213C;
+	margin-bottom: 60px;
 }
 
 .guitarras h2 {
@@ -39,12 +50,17 @@ body {
 }
 
 .guitarra {
-	margin: 10px;
+	margin: 10px 10px 30px 10px;
 	padding: 10px;
 	/*overflow: hidden;*/
 	border: 1px solid #1F213C;
 	border-radius: 8px;
 }
+
+.guitarra.b {
+	height: 190px;
+}
+
 
 .right {
 	float: right;
@@ -55,7 +71,7 @@ body {
 .left {
 	float: left;
 	position: relative;
-	top: 100px;
+
 }
 
 .title-b {
@@ -66,13 +82,14 @@ body {
 }
 
 .portada {
-	background-image: url('../images/background.png');
 	color: white;
 	padding: 20px;
+	height: 500px;
 }
 
 .portada button {
 	margin-bottom: 70px;
+	font-size: 18px;
 }
 
 .header {
@@ -92,10 +109,16 @@ body {
 	margin-left: 30px;
 }
 
+.menu a {
+	color: white;
+	text-decoration: none;
+}
+
 .menu li:before {
 	content: '∘';
-	font-size: 50px;
+	font-size: 45px;
 	line-height: 40px;
+	color: white;
 }
 
 .logotipo {
@@ -108,19 +131,25 @@ body {
 
 .contenedor-guitarra-b {
 	margin-left: 380px;
+	position: relative;
+	bottom: 70px;
 
 }
 
 .button {
-	border-radius: 5px;
+	border-radius: 8px;
 	background: #fd324e;
 	color: white;
 	border: none;
-	padding: 7px;
+	padding: 7px 12px;
+	background: linear-gradient(to left, #fe344e, #ff7250);
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .footer {
 	background: #273b47;
+	padding: 50px 10px;
 }
 
 .contacto {
@@ -153,7 +182,7 @@ body {
 	display: flex;
 	width: 400px;
 	color: white;
-	padding: 50px;
+
 }
 
 .col1,
@@ -170,6 +199,10 @@ body {
 	align-items: flex-start;
 }
 
+.col2 .button {
+	margin-top: 15px;
+}
+
 .intereses label {
 	font-size: 12px;
 }
@@ -182,6 +215,22 @@ body {
 
 .sexo {
 	margin-top: 10px;
+}
+
+.tabla {
+	margin: 50px 0px;
+}
+
+input,
+textarea {
+	outline: 0;
+	border-radius: 3px;
+}
+
+input:focus,
+textarea:focus {
+	background: lightgray;
+
 }
 
 table {
