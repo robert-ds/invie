@@ -1,0 +1,39 @@
+body {
+	background: peru;
+	font-family: sans-serif;
+}
+
+img,
+p {
+	border: 3px solid red;
+	transition: 1s;
+}
+
+.post img {
+	transform: translateY(-100px);
+}
+
+.post {
+	border: 10px solid red;
+	background: white;
+	padding: 20px;
+	text-align: center;
+	transition: .5s;
+	overflow: hidden;
+}
+
+.post:hover {
+	background: skyblue;
+}
+
+.post:hover img {
+	transform: scale(1.5);
+}
+
+.post p {
+	transform: translateY(100px);
+}
+
+.post:hover p {
+	transform: translateY(0);
+}
