@@ -254,3 +254,10 @@ th {
 	border: 1px solid #273b47;
 	border-collapse: collapse;
 }
+
+@media screen and (max-width: 800px) {
+	body {
+		background-color: peru;
+		border: 30px solid skyblue;
+	}
+}
