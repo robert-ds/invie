@@ -8,7 +8,7 @@ body {
 }
 
 .contenedor {
-	width: 800px;
+	max-width: 800px;
 	margin: auto;
 	position: relative;
 }
@@ -138,7 +138,6 @@ body {
 
 .button {
 	border-radius: 8px;
-	background: #fd324e;
 	color: white;
 	border: none;
 	padding: 7px 12px;
@@ -256,8 +255,55 @@ th {
 }
 
 @media screen and (max-width: 800px) {
-	body {
-		background-color: peru;
-		border: 30px solid skyblue;
+
+	/* Portada */
+	.titulo {
+		font-size: 45px;
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+
+	.title-a {
+		font-size: 18px;
+	}
+
+	.portada {
+		height: auto;
+	}
+
+	.portada .button {
+		display: inline-block;
+		margin-bottom: 30px;
+	}
+
+	/* Guitarras */
+
+	.guitarras {
+		text-align: center;
+		float: none;
+	}
+
+	.right,
+	.left {
+		float: none;
+		position: static;
+	}
+
+	.title-b {
+		margin: 0;
+	}
+
+	.guitarra li {
+		list-style: none;
+		padding: 2px;
+	}
+
+	.guitarra.b {
+		height: auto;
+	}
+
+	.contenedor-guitarra-b {
+		margin: 0;
+		position: static;
 	}
 }
