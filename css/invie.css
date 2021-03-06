@@ -416,7 +416,8 @@ th {
 	}
 
 	.menu li:hover {
-		background-color: rgba(250, 250, 250, .7);
+		background: linear-gradient(to left, #fe344e, #ff7250);
+		/* background-color: rgba(250, 250, 250, .7); */
 	}
 
 	.menu li:first-child {
