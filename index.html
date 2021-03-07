@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=0,maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=0,maximum-scale=1">
 		<title>invie - Guitarras Inviesibles</title>
 		<link rel="stylesheet" href="css/invie.css">
 		<!-- Primera Forma de Trabajar las Media Querie -->
@@ -17,7 +17,10 @@
 				<figure class="logotipo">
 					<img src="images/invie.png" width="186" height="60" alt="Invie Logotipo"><!-- logotipo -->
 				</figure>
-			<nav class="menu"><!-- menu -->
+				
+				<span id="burguer-button" class="burguer-button icon-menu"></span>
+
+			<nav id="menu" class="menu"><!-- menu -->
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#guitarras"> Guitarras</a></li>
@@ -113,6 +116,19 @@
 				</form>
 			</div>
 		</footer>
+
+		<script type="text/javascript">
+			var $burguerButton = document.getElementById('burguer-button');
+			var $menu = document.getElementById('menu');
+
+			$burguerButton.addEventListener('touchstart', toggleMenu);
+			
+			function toggleMenu(){
+				$menu.classList.toggle('active')
+			};
+
+
+		</script>
 	</body>
 
 </html>
