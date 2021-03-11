@@ -60,6 +60,7 @@ body {
 }
 
 .background {
+	background-color: #466173;
 	background-image: url('../images/background.png');
 	background-size: cover;
 }
@@ -542,5 +543,15 @@ th {
 
 	.contenedor-guitarra-a {
 		padding: 0;
+	}
+}
+
+video {
+	width: 100%;
+}
+
+@media screen and (--webkit-min-device-pixel-ratio: 2) {
+	.background {
+		background-image: url('../images/background2x.png');
 	}
 }

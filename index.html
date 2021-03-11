@@ -1,148 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=0,maximum-scale=1">
-		<title>invie - Guitarras Inviesibles</title>
-		<link rel="stylesheet" href="css/invie.css">
-		<!-- Primera Forma de Trabajar las Media Querie -->
-		<!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css"> -->
-	</head>
-	<body>
 
-		
-		<section id="portada" class="portada background"><!-- portada -->
-			<header id="header" class="header contenedor"><!-- header -->
-				<figure class="logotipo">
-					<img src="images/invie.png" width="186" height="60" alt="Invie Logotipo"><!-- logotipo -->
-				</figure>
-				
-				<span id="burguer-button" class="burguer-button icon-menu"></span>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=0,maximum-scale=1">
+	<title>invie - Guitarras Inviesibles</title>
+	<link rel="stylesheet" href="css/invie.css">
+	<!-- Primera Forma de Trabajar las Media Querie -->
+	<!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css"> -->
+</head>
 
-			<nav id="menu" class="menu"><!-- menu -->
+<body>
+
+
+	<section id="portada" class="portada background">
+		<!-- portada -->
+		<header id="header" class="header contenedor">
+			<!-- header -->
+			<figure class="logotipo">
+				<img src="images/invie.png" loading="lazy" srcset="images/invie.png 1x, images/invie2x.png 2x" width="186"
+					height="60" alt="Invie Logotipo">
+				<!-- logotipo -->
+			</figure>
+
+			<span id="burguer-button" class="burguer-button icon-menu"></span>
+
+			<nav id="menu" class="menu">
+				<!-- menu -->
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#guitarras"> Guitarras</a></li>
 					<li><a href="precios.html"> Precios</a></li>
 				</ul>
 			</nav>
-			</header>
+		</header>
 
-			<div class="contenedor">
-					<h1 class="titulo">Guitarras <span>Invie</span>sibles</h1><!--titulo -->
-				<h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
-				<a href="#guitarras" class="button">Conoce más</a> <!-- boton -->
+		<div class="contenedor">
+			<h1 class="titulo">Guitarras <span>Invie</span>sibles</h1>
+			<!--titulo -->
+			<h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
+			<a href="#guitarras" class="button">Conoce más</a> <!-- boton -->
+		</div>
+	</section>
+
+	<section id="guitarras" class="guitarras contenedor">
+		<!-- Guitarras -->
+		<h2>Nuestras Guitarras</h2><!-- titulo -->
+
+		<article class="guitarra">
+			<!-- guitarra1 -->
+			<img class="right" loading="lazy" srcset="images/invie-acustica.png 1x, images/invie-acustica2x.png 2x"
+				width="260" alt="Guitarra invie Acústica">
+			<div class="contenedor-guitarra-a">
+				<h3 class="title-b">Invie Acústica</h3>
+				<ol>
+					<li>Estilo Vintage</li>
+					<li>Madera Pura</li>
+					<li>Incluye Estuche Invisible de Aluminio</li>
+				</ol>
 			</div>
-		</section>
+		</article>
 
-		<section id="guitarras" class="guitarras contenedor"><!-- Guitarras -->
-			<h2>Nuestras Guitarras</h2><!-- titulo -->
-
-			<article class="guitarra"><!-- guitarra1 -->
-				<img class="right" src="images/invie-acustica.png" width="260" alt="Guitarra invie Acústica">
-				<div class="contenedor-guitarra-a">
-					<h3 class="title-b">Invie Acústica</h3>
-					<ol><li>Estilo Vintage</li>
-						<li>Madera Pura</li>
-						<li>Incluye Estuche Invisible de Aluminio</li>
-					</ol>
-				</div>
-			</article> 
-			 
-			<article class="guitarra b"><!-- guitarra2 -->
-				<img class="left" src="images/invie-classic.png" width="350" alt="Guitarra invie Classic">
-				<div class="contenedor-guitarra-b">
-					<h3 class="title-b">Invie Classic</h3>
-					<ol>
-						<li>Estilo Vintage</li>
-						<li>Liviana</li>
-						<li>Inicia tu Carrera como Rockstar</li>
-					</ol>
-				</div>
-			</article> 
-		</section>
-		<footer class="footer">
-			<div class="contenedor">
-				<div class="contacto">
-					<img src="images/invie-white.png" alt="Invie Logotipo">
-					<a href="tel:+573029920942"><Strong>Teléfono: </Strong> <span>3028877221</span></a>
-					<a href="mailto:contacto@invie.com"><strong>Email: </strong><span>contacto@invie.com</span></a>
-				</div>
-	
-				<form class="formulario">
-						<div class="col1">
-
-							<label for="nombre">Nombre: </label>
-							<input type="text" required placeholder="Digita el Nombre" id="nombre" name="nombre">
-							<label for="email">Email: </label>
-							<input type="email" required placeholder="Digita el Email" id="email" name="email">
-	
-							<div class="sexo">
-								<label for="mujer">
-									<input type="radio" checked id="mujer" name="sexo" value="mujer"> Mujer
-								</label>
-			
-								<label for="hombre">
-									<input type="radio" id="hombre" name="sexo" value="hombre"> Hombre
-								</label>
-							</div>
-	
-							<div class="intereses">
-								<label for="cotizacion">
-									<input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotización
-								</label>
-	
-								<label for="reclamos">
-									<input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
-								</label>
-	
-								<label for="comentarios">
-									<input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
-								</label>
-	
-								<label for="otros">
-									<input type="checkbox" id="otros" name="intereses" value="otros"> Cotización
-								</label>
-							</div>
-
-						</div>
-
-						<div class="col2">
-							<label for="comentarios">Comentarios</label>
-							<textarea name="comentarios" id="comentarios" cols="25" rows="5"></textarea>
-							<input class="button" type="submit" value="Enviar">
-						</div>
-				</form>
+		<article class="guitarra b">
+			<!-- guitarra2 -->
+			<img class="left" loading="lazy" srcset="images/invie-classic.png 1x, images/invie-classic2x.png 2x" width="350"
+				alt="Guitarra invie Classic">
+			<div class="contenedor-guitarra-b">
+				<h3 class="title-b">Invie Classic</h3>
+				<ol>
+					<li>Estilo Vintage</li>
+					<li>Liviana</li>
+					<li>Inicia tu Carrera como Rockstar</li>
+				</ol>
 			</div>
-		</footer>
+		</article>
+	</section>
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="contacto">
+				<img loading="lazy" srcset="images/invie-white.png 1x, images/invie-white2x.png 2x" alt="Invie Logotipo">
+				<a href="tel:+573029920942"><Strong>Teléfono: </Strong> <span>3028877221</span></a>
+				<a href="mailto:contacto@invie.com"><strong>Email: </strong><span>contacto@invie.com</span></a>
+			</div>
 
-		<script type="text/javascript">
-			var $burguerButton = document.getElementById('burguer-button');
-			var $menu = document.getElementById('menu');
-	
-				function toggleMenu(){
-						$menu.classList.toggle('active');
-					};
+			<form class="formulario">
+				<div class="col1">
 
-			var consulta = window.matchMedia('(max-width: 500px)');
-			consulta.addListener(mediaQuery);
+					<label for="nombre">Nombre: </label>
+					<input type="text" required placeholder="Digita el Nombre" id="nombre" name="nombre">
+					<label for="email">Email: </label>
+					<input type="email" required placeholder="Digita el Email" id="email" name="email">
 
+					<div class="sexo">
+						<label for="mujer">
+							<input type="radio" checked id="mujer" name="sexo" value="mujer"> Mujer
+						</label>
 
-			function mediaQuery(){
+						<label for="hombre">
+							<input type="radio" id="hombre" name="sexo" value="hombre"> Hombre
+						</label>
+					</div>
 
-				if(consulta.matches){
-					console.log("Se Cumplio la Condición");
-					$burguerButton.addEventListener('touchstart', toggleMenu);
-				}	else{
-					console.log("No Se Cumplio la Condición")
-					$burguerButton.removeEventListener('touchstart', toggleMenu);
-				}	
+					<div class="intereses">
+						<label for="cotizacion">
+							<input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotización
+						</label>
+
+						<label for="reclamos">
+							<input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+						</label>
+
+						<label for="comentarios">
+							<input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+						</label>
+
+						<label for="otros">
+							<input type="checkbox" id="otros" name="intereses" value="otros"> Cotización
+						</label>
+					</div>
+
+				</div>
+
+				<div class="col2">
+					<label for="comentarios">Comentarios</label>
+					<textarea name="comentarios" id="comentarios" cols="25" rows="5"></textarea>
+					<input class="button" type="submit" value="Enviar">
+				</div>
+			</form>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+
+		/* Script Para Comprobar si el Navegador Soporta Lazzy Loading */
+		/* function loading() {
+			if ('loading' in HTMLImageElement.prototype) {
+				console.log('El navegador soporta `lazy-loading`...');
+			} else {
+				console.log('`lazy-loading` no soportado...');
 			}
-			
-			mediaQuery();
-		
-		</script>
-	</body>
+		} */
+
+		var $burguerButton = document.getElementById('burguer-button');
+		var $menu = document.getElementById('menu');
+
+		function toggleMenu() {
+			$menu.classList.toggle('active');
+		};
+
+		var consulta = window.matchMedia('(max-width: 500px)');
+		consulta.addListener(mediaQuery);
+
+
+		function mediaQuery() {
+
+			if (consulta.matches) {
+				console.log("Se Cumplio la Condición");
+				$burguerButton.addEventListener('touchstart', toggleMenu);
+			} else {
+				console.log("No Se Cumplio la Condición")
+				$burguerButton.removeEventListener('touchstart', toggleMenu);
+			}
+		}
+
+		mediaQuery();
+
+	</script>
+</body>
 
 </html>
