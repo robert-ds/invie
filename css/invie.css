@@ -314,10 +314,21 @@ th {
 	top: 20px;
 	cursor: pointer;
 	z-index: 3;
+	color:white;
 }
 
 /* Media Querie Tablet */
 @media screen and (max-width: 800px) {
+
+	.tabla{
+		margin: 50px 20px;
+	}
+
+	/* Precios */
+	.tabla .contenedor{
+		overflow:auto;
+		border: 1px solid #273b47;
+	}
 
 	/* Portada */
 	.titulo {
@@ -467,6 +478,14 @@ th {
 
 	/* Portada */
 	.portada .contenedor {
+		position: static;
+	}
+
+	.header{
+		position: static;
+	}
+
+	.header .contenedor{
 		position: static;
 	}
 
