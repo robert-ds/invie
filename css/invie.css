@@ -309,12 +309,13 @@ th {
 	background: #91afc0;
 	display: inline-block;
 	text-align: center;
-	position: absolute;
+	position: fixed;
 	left: 20px;
 	top: 20px;
 	cursor: pointer;
 	z-index: 3;
 	color:white;
+	display: none;
 }
 
 /* Media Querie Tablet */
@@ -491,7 +492,7 @@ th {
 
 	.menu {
 		background: rgba(255, 60, 88, .8);
-		position: absolute;
+		position: fixed;
 		width: 100%;
 		left: -100%;
 		top: 0;
@@ -549,6 +550,7 @@ th {
 
 	.portada .button {
 		margin: 10px 0;
+		display: block;
 	}
 
 	/* Contenedor */
@@ -563,10 +565,14 @@ th {
 	.contenedor-guitarra-a {
 		padding: 0;
 	}
-}
 
-video {
-	width: 100%;
+	.burguer-button{
+		display: block;
+	}
+
+	.col2{
+		align-items: stretch;
+	}
 }
 
 @media screen and (--webkit-min-device-pixel-ratio: 2) {

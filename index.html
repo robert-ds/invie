@@ -19,7 +19,7 @@
 		<header id="header" class="header contenedor">
 			<!-- header -->
 			<figure class="logotipo">
-				<img src="images/invie.png" loading="lazy" srcset="images/invie.png 1x, images/invie2x.png 2x" width="186"
+				<img loading="lazy" data-src="images/invie.png|images/invie2x.png" width="186"
 					height="60" alt="Invie Logotipo">
 				<!-- logotipo -->
 			</figure>
@@ -50,7 +50,7 @@
 
 		<article class="guitarra">
 			<!-- guitarra1 -->
-			<img class="right" loading="lazy" srcset="images/invie-acustica.png 1x, images/invie-acustica2x.png 2x"
+			<img class="right" loading="lazy" data-src="images/invie-acustica.png|images/invie-acustica2x.png"
 				width="260" alt="Guitarra invie Acústica">
 			<div class="contenedor-guitarra-a">
 				<h3 class="title-b">Invie Acústica</h3>
@@ -64,7 +64,7 @@
 
 		<article class="guitarra b">
 			<!-- guitarra2 -->
-			<img class="left" loading="lazy" srcset="images/invie-classic.png 1x, images/invie-classic2x.png 2x" width="350"
+			<img class="left" loading="lazy" data-src="images/invie-classic.png|images/invie-classic2x.png" width="350"
 				alt="Guitarra invie Classic">
 			<div class="contenedor-guitarra-b">
 				<h3 class="title-b">Invie Classic</h3>
@@ -79,7 +79,7 @@
 	<footer class="footer">
 		<div class="contenedor">
 			<div class="contacto">
-				<img loading="lazy" srcset="images/invie-white.png 1x, images/invie-white2x.png 2x" alt="Invie Logotipo">
+				<img loading="lazy" data-src="images/invie-white.png|images/invie-white2x.png" alt="Invie Logotipo">
 				<a href="tel:+573029920942"><Strong>Teléfono: </Strong> <span>3028877221</span></a>
 				<a href="mailto:contacto@invie.com"><strong>Email: </strong><span>contacto@invie.com</span></a>
 			</div>
@@ -131,6 +131,8 @@
 		</div>
 	</footer>
 
+	<script src="scripts/hammer.min.js"></script>
+	<script src="scripts/blazy.min.js"></script>
 	<script type="text/javascript">
 
 		/* Script Para Comprobar si el Navegador Soporta Lazzy Loading */
@@ -147,6 +149,14 @@
 
 		function toggleMenu() {
 			$menu.classList.toggle('active');
+		};
+
+		function showMenu() {
+			$menu.classList.add('active');
+		};
+
+		function hideMenu() {
+			$menu.classList.remove('active');
 		};
 
 		var consulta = window.matchMedia('(max-width: 500px)');
@@ -166,7 +176,20 @@
 
 		mediaQuery();
 
+		/* Gestos Touch */
+			var $body = document.body;
+
+			var gestos = new Hammer($body);
+			gestos.on('swipeleft', showMenu);
+			gestos.on('swiperight', hideMenu);
+
+		/* Lazy Loading */
+		var bLazy = new Blazy({
+			selector: 'img'
+		});
+
 	</script>
+
 </body>
 
 </html>
