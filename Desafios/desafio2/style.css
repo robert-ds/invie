@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: lightblue;
+
+}
+
+img {
+  transition: 2s;
+  opacity: 0;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+  left: -40%;
+}
+
+img.b-loaded {
+  opacity: 1;
+  left:0;
+}
+
+figure {
+  background-image: url('images/loading.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 605px;
+  margin: 0 auto;
+}
+
+figcaption{
+  background: white;
+  font-size: 18px;
+  padding: 15px 10px;
+  border-bottom: 10px solid lightgray;
+}
